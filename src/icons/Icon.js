@@ -8,11 +8,11 @@ import { Platform } from 'react-primitives'
 const IconStyled = styledweb.svg`
   width: ${({ size }) => `${size}px`};
   height: ${({ size }) => `${size}px`};
-  fill: ${({ color }) => color === 'primary' ? '#9F92FF' : color }
+  fill: ${({ color }) => color === 'primary' ? '#9F92FF' : color };
 `
 
-const WebIcon = ({size, color, icon}) => (
-  <IconStyled size={size} color={color} viewBox="0 0 1024 1024">
+const WebIcon = ({size, color, icon, style}) => (
+  <IconStyled size={size} color={color} viewBox="0 0 1024 1024" style={style}>
     <path d={icon}></path>
   </IconStyled>
 )
@@ -25,9 +25,9 @@ const MobileIcon = ({size, color, icon}) => (
 )
 */
 
-const Icon = ({ icon, size, color}) => (
+const Icon = ({ icon, size, color, style}) => (
   //Platform.OS === 'web' ?
-    <WebIcon size={size} color={color} icon={icon} />
+    <WebIcon size={size} color={color} icon={icon} style={style}/>
     // : <MobileIcon size={size} color={color} icon={icon} />
 )
 
