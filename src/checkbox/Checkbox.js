@@ -50,7 +50,7 @@ class Checkbox extends Component {
 
   renderCheckIcon() {
     const { checked } = this.state
-    return !checked ? '' : <Icon icon={CHECKED_ICON} size={14} color={'white'}/>
+    return !checked ? '' : <Icon icon={CHECKED_ICON} size={14} color={'white'} style={{margin : 'auto'}}/>
   }
 
   renderLabel() {
