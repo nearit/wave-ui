@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components/primitives'
-import { Touchable } from 'react-primitives';
+import { Touchable } from 'react-primitives'
 
 const Button = styled.View`
   width: 300;

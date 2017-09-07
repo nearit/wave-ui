@@ -8,11 +8,13 @@ import {
   ToggleButton
 } from './buttons'
 import { Checkbox } from './checkbox'
+import { ColorPicker } from './ColorPicker'
 import { Icon } from './icons'
 import './style.css'
 
 export default {
-  Checkbox
+  Checkbox,
+  ColorPicker,
   Fab,
   Icon,
   InnerButton,
