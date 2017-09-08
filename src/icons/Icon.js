@@ -13,7 +13,8 @@ const IconStyled = styledweb.svg`
 
 const Container = styled.View`
   cursor: pointer;
-  width: ${({ width }) => width}
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
 `
 const WebIcon = ({size, color, icon, style}) => (
   <IconStyled size={size} color={color} viewBox="0 0 1024 1024" style={style}>
@@ -43,7 +44,7 @@ const Icon = ({ icon, size, color, style, onClick}) => {
 
   return (
     <Touchable onPress={onClick}>
-      <Container width={size}>
+      <Container width={size} height={size}>
         <WebIcon size={size} color={color} icon={icon} style={style}/>
       </Container>
     </Touchable>
