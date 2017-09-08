@@ -8,9 +8,10 @@ import {
   ToggleButton
 } from './buttons'
 import { Checkbox } from './checkbox'
-import { ColorPicker } from './ColorPicker'
+import { ColorPicker } from './color-picker'
 import { Icon } from './icons'
-import { Page } from './Page'
+import { Page } from './page'
+import { TagChip } from 'tags'
 import './style.css'
 
 export default {
@@ -18,6 +19,7 @@ export default {
   ColorPicker,
   Icon,
   Page,
+  TagChip,
   Fab,
   InnerButton,
   MainConfirmButton,
