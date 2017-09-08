@@ -10,13 +10,15 @@ import {
 import { Checkbox } from './checkbox'
 import { ColorPicker } from './ColorPicker'
 import { Icon } from './icons'
+import { Page } from './Page'
 import './style.css'
 
 export default {
   Checkbox,
   ColorPicker,
-  Fab,
   Icon,
+  Page,
+  Fab,
   InnerButton,
   MainConfirmButton,
   PopupButton,
