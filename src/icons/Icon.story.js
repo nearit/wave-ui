@@ -31,3 +31,15 @@ stories.add(
     />
   )
 )
+
+stories.add(
+  'clickable',
+  () => (
+    <Icon
+      icon={ICONS.BUBBLE}
+      size={20}
+      color={'black'}
+      onClick={() => console.log("icon click")}
+    />
+  )
+)
