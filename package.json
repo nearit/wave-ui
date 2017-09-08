@@ -35,7 +35,7 @@
     "typecheck": "flow check src/",
     "validate": "run-s lint typecheck",
     "storybook:start": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o .out",
+    "storybook:build": "build-storybook -c .storybook -o docs",
     "build:js": "babel src/ -d dist/ --ignore spec.js,story.js",
     "build:flow": "flow-copy-source -v -i '**/*.{story,spec}.js' src/ dist/",
     "prebuild": "npm run clean",
