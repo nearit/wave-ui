@@ -28,6 +28,14 @@ const Label = styled.Text`
   user-select: none;
 `
 
+/**
+
+state:
+  - default
+  - active
+  - disabled
+
+*/
 const TagChip = ({ state, label, actionIcon, onClick }) => (
   <Touchable onPress={onClick}>
     <ChipContainer data-state={state}>
