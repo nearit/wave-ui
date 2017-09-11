@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components/primitives'
 import styledweb from 'styled-components'
-import { Platform } from 'react-primitives'
-import { Touchable } from 'react-primitives'
+import { Touchable /*, Platform  */} from 'react-primitives'
 
 const IconStyled = styledweb.svg`
   width: ${({ size }) => `${size}px`};
@@ -38,14 +37,24 @@ const MobileIcon = ({size, color, icon}) => (
 const Icon = ({ icon, size, color, style, onClick}) => {
   if (!onClick) {
     return (
-      <WebIcon size={size} color={color} icon={icon} style={style}/>
+      <WebIcon
+        icon={icon}
+        size={size}
+        color={color}
+        style={style}
+      />
     )
   }
 
   return (
     <Touchable onPress={onClick}>
       <Container width={size} height={size}>
-        <WebIcon size={size} color={color} icon={icon} style={style}/>
+        <WebIcon
+          icon={icon}
+          size={size}
+          color={color}
+          style={style}
+        />
       </Container>
     </Touchable>
   )
